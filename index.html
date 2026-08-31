@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="HarborTime — world port clocks, live maritime time and harbor atmosphere.">
+<title>HarborTime — The World's Harbors, In One Clock</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="noise"></div>
+
+<header class="nav">
+  <a href="#top" class="logo"><span class="wave-logo"><i></i><i></i><i></i></span>Harbor<span>Time</span></a>
+  <nav><a href="#clock">Live Clock</a><a href="#ports">World Ports</a><a href="#about">About</a></nav>
+  <button class="ambient-btn" id="ambientBtn"><span>◉</span> Ambient Mode</button>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="hero-bg"></div><div class="hero-shade"></div>
+  <div class="stars"></div>
+  <div class="hero-inner">
+    <div class="eyebrow"><span></span> MARITIME TIME SYSTEM · LIVE</div>
+    <p class="kicker">THE WORLD'S HARBORS</p>
+    <h1>One horizon.<br><em>Many moments.</em></h1>
+    <p class="intro">A cinematic digital clock for the places where cities, ships and time zones meet the sea.</p>
+    <div class="hero-clock">
+      <div><small>ROTTERDAM · LOCAL TIME</small><strong id="heroTime">00:00:00</strong><span id="heroDate">MONDAY · AUGUST 31, 2026</span></div>
+      <div class="hero-zone">UTC <b id="heroOffset">+02</b></div>
+    </div>
+    <div class="hero-actions"><a href="#clock" class="primary">Enter the display <b>↓</b></a><a href="#ports" class="secondary">Explore ports ↗</a></div>
+  </div>
+  <div class="coordinates">51°55′N &nbsp; 4°29′E</div>
+  <div class="horizon-line"></div>
+  <div class="ship ship-a">▰━━━━━━━━</div><div class="ship ship-b">━━▰━━━━</div>
+</section>
+
+<div class="statusbar">
+  <span>PORT STATUS <b class="green">● LIVE</b></span><span>UTC <b id="utc">00:00:00</b></span><span>WIND <b>12 KN</b></span><span>VISIBILITY <b>GOOD</b></span><span>SEA <b>CALM</b></span>
+</div>
+
+<section class="clock-section" id="clock">
+  <div class="section-top">
+    <div><div class="eyebrow dark"><span></span> LIVE HARBOR DISPLAY</div><h2>Time,<br><em>in motion.</em></h2></div>
+    <p>Designed like a real maritime information display: precise, quiet and always moving with the world.</p>
+  </div>
+  <div class="display">
+    <div class="display-image"></div>
+    <div class="display-content">
+      <div class="display-label"><span class="pulse"></span> LOCAL HARBOR TIME <b>UTC+2</b></div>
+      <div class="giant-time" id="mainTime">00:00:00</div>
+      <div class="date" id="mainDate">MONDAY · AUGUST 31, 2026</div>
+      <div class="city">ROTTERDAM <small>THE NETHERLANDS</small></div>
+      <div class="divider"></div>
+      <div class="data"><span>LAT 51°55′N</span><span>LON 4°29′E</span><span>24H FORMAT</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="ports" id="ports">
+  <div class="section-top">
+    <div><div class="eyebrow dark"><span></span> WORLD PORT NETWORK</div><h2>Five cities.<br><em>One sea of time.</em></h2></div>
+    <div class="count">05<br>PORTS ONLINE</div>
+  </div>
+  <div class="port-grid">
+    <article class="port rotterdam"><div class="port-bg"></div><div class="port-head"><span>01 / RTM</span><b>● LIVE</b></div><div class="port-info"><small>THE NETHERLANDS</small><h3>Rotterdam</h3><strong data-zone="Europe/Amsterdam">--:--</strong><p data-date-zone="Europe/Amsterdam">---</p></div></article>
+    <article class="port singapore"><div class="port-bg"></div><div class="port-head"><span>02 / SGP</span><b>● LIVE</b></div><div class="port-info"><small>SINGAPORE</small><h3>Singapore</h3><strong data-zone="Asia/Singapore">--:--</strong><p data-date-zone="Asia/Singapore">---</p></div></article>
+    <article class="port london"><div class="port-bg"></div><div class="port-head"><span>03 / LDN</span><b>● LIVE</b></div><div class="port-info"><small>UNITED KINGDOM</small><h3>London</h3><strong data-zone="Europe/London">--:--</strong><p data-date-zone="Europe/London">---</p></div></article>
+    <article class="port newyork"><div class="port-bg"></div><div class="port-head"><span>04 / NYC</span><b>● LIVE</b></div><div class="port-info"><small>UNITED STATES</small><h3>New York</h3><strong data-zone="America/New_York">--:--</strong><p data-date-zone="America/New_York">---</p></div></article>
+    <article class="port sydney"><div class="port-bg"></div><div class="port-head"><span>05 / SYD</span><b>● LIVE</b></div><div class="port-info"><small>AUSTRALIA</small><h3>Sydney</h3><strong data-zone="Australia/Sydney">--:--</strong><p data-date-zone="Australia/Sydney">---</p></div></article>
+  </div>
+</section>
+
+<section class="map-section">
+  <div class="map-copy"><div class="eyebrow dark"><span></span> GLOBAL HARBOR MAP</div><h2>Follow the<br><em>blue hour.</em></h2><p>As one harbor wakes, another falls quiet. HarborTime connects them through one simple visual language.</p></div>
+  <div class="map">
+    <div class="route r1"></div><div class="route r2"></div>
+    <div class="map-dot d1"><b>ROTTERDAM</b></div><div class="map-dot d2"><b>LONDON</b></div><div class="map-dot d3"><b>NEW YORK</b></div><div class="map-dot d4"><b>SINGAPORE</b></div><div class="map-dot d5"><b>SYDNEY</b></div>
+    <div class="map-label">NORTH ATLANTIC / INDIAN OCEAN / PACIFIC</div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="about-photo"></div>
+  <div class="about-copy"><div class="eyebrow"><span></span> HARBORTIME / 002</div><h2>Built for the<br><em>rhythm of water.</em></h2><p>Every port has a different rhythm. HarborTime turns that rhythm into a calm, readable experience — inspired by navigation boards, ocean horizons and the glow of blue-hour cities.</p><div class="signature">— THE HARBORTIME CREW</div></div>
+</section>
+</main>
+
+<footer><div class="footer-logo">Harbor<span>Time</span></div><span>TIME AT THE EDGE OF THE WORLD</span><span>© 2026 HARBORTIME</span></footer>
+<script src="script.js"></script>
+</body>
+</html>
