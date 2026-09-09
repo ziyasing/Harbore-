@@ -1,7 +1,13 @@
-HarborTime 2.0
-===============
-Maritime blue landing page with live clocks, world ports, harbor map,
-animated ship silhouettes and Ambient Mode.
+HarborTime — Favicon Revision
+Custom anchor + ocean-wave favicon made for the HarborTime maritime blue theme.
 
-Open index.html in a browser with internet access.
-Images are hotlinked from Unsplash and are subject to the Unsplash License.
+Included:
+- index.html
+- style.css
+- script.js
+- favicon.svg
+- favicon.png
+- favicon.ico
+- README.txt
+
+The HTML is already linked to all favicon formats.
